@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 * body {
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -822,6 +822,80 @@ template {
   width: 537px;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+.activities__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+}
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  top: 131px;
+  left: 27px;
+  z-index: 2;
+}
+.card__button {
+  font-style: normal;
+  z-index: 2;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #fff;
+  padding: 7px 20px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -833,6 +907,13 @@ template {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .card__title {
+    right: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -885,6 +966,15 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
   }
 }
 @media (max-width: 768px) {
@@ -982,6 +1072,14 @@ template {
     margin-right: -125px;
     transform: translate(50%, 0);
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1018,5 +1116,8 @@ template {
   }
   .reviews-slider__button--next {
     margin-right: -65px;
+  }
+  .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
