@@ -236,7 +236,39 @@
     &-info 
       &-two
         margin-top: 15px
-
+@media (max-width:464px)
+  .container 
+    width: 85%  
+  .other
+    grid-template: 1fr / 50% 50%
+    grid-template-areas: "title title" "card-1 card-1" "card-2 card-2" "card-3 card-3" "card-4 card-4" "card-5 card-5" 
+    &-title 
+      font-size: 30px
+      text-align: left
+      padding-left: 30px
+    &-element
+      &-one
+        height: 260px
+        max-width: 93%
+        column-gap: 10px
+      &-two,&-tree,&-four,&-five
+        max-width: 93%
+      &-two 
+        grid-template:50% 50%/100%
+    &-image 
+      &-one 
+        height: 100%
+      &-two 
+        width: 100%
+        height: 100%
+    &-text 
+      display: none
+    &-reserv 
+      grid-template-columns:75px 1fr
+    &-price 
+      grid-template-rows:50% 50%
+      &-end 
+        font-size: 20px
 
 
 
