@@ -15,10 +15,10 @@
     margin-top: 40px
     grid-area: title 
   &-image 
-    &__one  
+    &-one  
       height: 500px
   &-element
-    &__one,&__two,&__tree,&__four,&__five
+    &-one,&-two,&-tree,&-four,&-five
       position: relative
       display: grid
       grid-template-columns: 1fr 1fr
@@ -28,23 +28,23 @@
       border-radius: 8px
       background-color: $dark
       color: $light
-    &__two
+    &-two
       grid-template: 50% 50% / 100%
       grid-area: card-2
-    &__tree
+    &-tree
       grid-template: 50% 50% / 100%
       grid-area: card-3
-    &__four
+    &-four
       grid-template: 50% 50% / 100%
       grid-area: card-4
-    &__five
+    &-five
       grid-template: 50% 50% / 100%
       grid-area: card-5
   &-content 
-    &__one
+    &-one
       padding-top: 46px
       padding-right: 21px
-    &__two
+    &-two
       padding-left: 32px
       padding-top: 30px
       padding-right: 21px
@@ -53,7 +53,7 @@
     font-size: 18px
     font-weight: bold
     line-height: 22.59px
-    &__two
+    &-two
       margin-bottom: 23px
       margin-top: 0
   &-text 
@@ -67,7 +67,7 @@
     font-weight: normal 
     font-size: 12px
     line-height: 15.06px
-    &__two
+    &-two
       margin-top: 0
     &__text 
       padding-left: 14px
@@ -81,18 +81,17 @@
     margin-top: 37px
     align-self: start
     justify-self: start
-    &__two
+    &-two
       margin-top: 24px
   &-price 
     display: grid
     grid-template-rows: 1fr 1fr
-    &__start
+    &-start
       font-weight: normal 
       font-size: 14px
       line-height: 17.57px
       margin-bottom: 5px
-      &__two
-    &__end
+    &-end
       font-weight: bold
       font-size: 24px
       line-height: 30.12px
