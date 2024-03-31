@@ -15,6 +15,10 @@
     height: 230px
     &__title
       right: 30px
+  .other 
+    &-content 
+      &__one
+        padding-top: 15px
 @media (max-width:992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -64,6 +68,42 @@
       margin-bottom: 20px
   .card 
     width: 339px
+  .other
+    &-element 
+      &__one,&__two,&__tree,&__four,&__five
+        height: 400px
+        column-gap: 40px
+      &__two
+        grid-template: 42% 50% / 100%
+        grid-area: card-2
+      &__tree
+        grid-template: 42% 50% / 100%
+        grid-area: card-3
+      &__four
+        grid-template: 42% 50% / 100%
+        grid-area: card-4
+      &__five
+        grid-template: 42% 50% / 100%
+        grid-area: card-5
+    &-image 
+      &__one 
+        height: 400px
+    &-name 
+      margin-bottom: 10px
+    &-text 
+      margin-top: 5px
+      &__none
+        display: none
+    &-info 
+      margin-top: 30px
+    &-content
+      &__two
+        padding-left: 23px
+        padding-top: 10px
+    &-reserv
+      grid-template-columns: 100px 1fr
+      margin-top: 10px
+    
 @media (max-width:768px)
   .container
     max-width: 576px
@@ -150,6 +190,10 @@
   .card 
     width: 48%
     height: 255px
+  .other 
+    grid-template: 1fr / 50% 50%
+    grid-template-areas: "title title" "card-1 card-1" "card-2 card-3" "card-4 card-5" 
+      
 @media (max-width:576px)
   .container
     max-width: 480px
@@ -184,6 +228,14 @@
           margin-right: -65px
   .card 
     width: 100%
+    padding-right: 80px
+  .other
+    &-content
+      &__two
+        padding-top: 20px
+    &-info 
+      &__two
+        margin-top: 15px
 
 
 
