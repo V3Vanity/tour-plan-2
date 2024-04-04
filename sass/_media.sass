@@ -19,6 +19,9 @@
     &-content 
       &-one
         padding-top: 15px
+  .footer 
+    &__input 
+      flex-basis: 100%
 @media (max-width:992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -103,7 +106,34 @@
     &-reserv
       grid-template-columns: 100px 1fr
       margin-top: 10px
-    
+  .footer 
+    &-wrapper 
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input 
+      flex-basis: 49%
+    &__logo 
+      grid-row: 1 / 2 
+      grid-column: span 2
+    &__social
+      &-network 
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories 
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal 
+      grid-column: span 2
+    &__additional 
+      grid-column: span 2
+    &__contact
+      &-details 
+        grid-column: span 5
+        grid-row: 3 
+      &-form 
+        grid-column: span 5
+        grid-row: 4 
 @media (max-width:768px)
   .container
     max-width: 576px
@@ -193,7 +223,10 @@
   .other 
     grid-template: 1fr / 50% 50%
     grid-template-areas: "title title" "card-1 card-1" "card-2 card-3" "card-4 card-5" 
-      
+  .footer 
+    &__contact
+      &-form 
+        grid-column: span 6
 @media (max-width:576px)
   .container
     max-width: 480px
@@ -236,6 +269,34 @@
     &-info 
       &-two
         margin-top: 15px
+  .footer 
+    &-wrapper 
+      grid-template-columns: 1fr
+    &__logo 
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details 
+        grid-row: 6
+        grid-column: 1
+      &-form 
+        grid-row: 7
+        grid-column: 1
+    &__input 
+      flex-basis: 100%  
 @media (max-width:464px)
   .container 
     width: 85%  
